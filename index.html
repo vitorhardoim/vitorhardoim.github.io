@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <div class="calculator-grid">
+        <div class="output">
+            <div id="pre" class="previous-operand"></div>
+            <div id="cur" class="current-operand">0</div>
+        </div>
+        <input type="button" value="%">
+        <input type="button" value="√">
+        <input type="button" value="x²">
+        <input type="button" value="1/x">
+        <input type="button" onclick="cleanCur()" value="CE">
+        <input type="button" onclick="clean()" value="C">
+        <input type="button" value="⌫">
+        <input type="button" onclick="op('÷')" value="÷">
+        <input type="button" onclick="digit(7)" class="number" value="7">
+        <input type="button" onclick="digit(8)" class="number" value="8">
+        <input type="button" onclick="digit(9)" class="number" value="9">
+        <input type="button" value="x">
+        <input type="button" onclick="digit(4)" class="number" value="4">
+        <input type="button" onclick="digit(5)" class="number" value="5">
+        <input type="button" onclick="digit(6)" class="number" value="6">
+        <input type="button" value="-">
+        <input type="button" onclick="digit(1)" class="number" value="1">
+        <input type="button" onclick="digit(2)" class="number" value="2">
+        <input type="button" onclick="digit(3)" class="number" value="3">
+        <input type="button" value="+">
+        <input type="button" value="±">
+        <input type="button" onclick="digit(0)" class="number" value="0">
+        <input type="button" value=",">
+        <input type="button" onclick="equal(true)" value="=">
+    </div>
+    <footer>
+            <p>&copy;Vitor Hardoim</p>
+    </footer>
+</body>
+</html>
