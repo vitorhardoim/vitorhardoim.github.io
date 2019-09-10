@@ -1,50 +1,221 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    </style>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link href="assets/css/bootstrap.css" rel="stylesheet">
+   <link href="assets/css/all.css" rel="stylesheet">
+   <link href="assets/css/styles.css" rel="stylesheet">
+   <title>PikeX</title>
 </head>
-<body>
-    <header>
-        <h1>Calculadora</h1>
-    </header>
-    <div class="calculator-grid">
-        <div class="output">
-            <div id="pre" class="previous-operand"></div>
-            <div id="cur" class="current-operand">0</div>
-        </div>
-        <input type="button" value="%">
-        <input type="button" value="√">
-        <input type="button" value="x²">
-        <input type="button" value="1/x">
-        <input type="button" onclick="cleanCur()" value="CE">
-        <input type="button" onclick="clean()" value="C">
-        <input type="button" value="⌫">
-        <input type="button" onclick="op('÷')" value="÷">
-        <input type="button" onclick="digit(7)" class="number" value="7">
-        <input type="button" onclick="digit(8)" class="number" value="8">
-        <input type="button" onclick="digit(9)" class="number" value="9">
-        <input type="button" value="x">
-        <input type="button" onclick="digit(4)" class="number" value="4">
-        <input type="button" onclick="digit(5)" class="number" value="5">
-        <input type="button" onclick="digit(6)" class="number" value="6">
-        <input type="button" value="-">
-        <input type="button" onclick="digit(1)" class="number" value="1">
-        <input type="button" onclick="digit(2)" class="number" value="2">
-        <input type="button" onclick="digit(3)" class="number" value="3">
-        <input type="button" value="+">
-        <input type="button" value="±">
-        <input type="button" onclick="digit(0)" class="number" value="0">
-        <input type="button" value=",">
-        <input type="button" onclick="equal(true)" value="=">
-    </div>
-    <footer>
-            <p>&copy;Vitor Hardoim</p>
-    </footer>
+
+<body data-spy="scroll" data-target="#barra-navegacao" fixed-top>
+   <nav id="barra-navegacao" class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+      <div class="container">
+         <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.png" alt="logo" style="width: 90px">
+         </a>
+         <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav mr-auto">
+               <div class="dropdown">
+                  <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">
+                     <i class="fas fa-bicycle"></i>
+                     Bicicletas
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Completas</a>
+                     <a class="dropdown-item" href="#">Quadros</a>
+                     <a class="dropdown-item" href="#">Freios</a>
+                     <a class="dropdown-item" href="#">Pedais</a>
+                  </div>
+               </div>
+               <div class="dropdown">
+                  <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">
+                     <i class="fas fa-tshirt"></i>
+                     Vestuário
+                  </a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Bermudas</a>
+                     <a class="dropdown-item" href="#">Bonés</a>
+                     <a class="dropdown-item" href="#">Camisas</a>
+                     <a class="dropdown-item" href="#">Meias</a>
+                  </div>
+               </div>
+               <a class="nav-link nav-item" href="#">
+                  Outros
+               </a>
+            </div>
+
+            <div class="navbar-nav">
+               <a class="nav-link nav-item" href="carrinho.html">
+                  <i class="fas fa-shopping-cart"></i>
+               </a>
+               <a class="nav-link nav-item" href="novo-produto.html">
+                  <i class="fas fa-sign-in-alt"></i>
+                  Entrar
+               </a>
+            </div>
+         </div>
+      </div>
+   </nav>
+
+   <div class="w3-content w3-display-container">
+      <img class="mySlides" src="assets/images/slider1.png">
+      <img class="mySlides" src="assets/images/slider2.png">
+      <img class="mySlides" src="assets/images/slider3.png">
+
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+   </div>
+
+   <div class="container mb-4">
+      <div class="d-block d-md-none jumbotron text-center mb-4" style="margin-top: 90px;">
+         <span class="font-weight-bold" style="font-size: 18px;"></span>
+         <br>
+         <br>
+         <span style="font-size: 16px;"></span>
+      </div>
+
+      <h4 id="passeios" class="mb-0 mt-3">Conheça nossos Produtos</h4>
+
+      <div id="cards" class="row mb-4">
+
+         <div class="col-md-6 col-lg-4">
+            <div class="card mt-3">
+               <a href="produto.html">
+                  <img href="produto.html" class="card-img-top" src="assets/images/bicicleta1.jpg" alt="bicicleta1">
+                  <div class="card-body">
+                     <div class="card-title text-center">
+                        <h5 style="color: black;">Bicicleta HUPI Naja Single Speed Mecânica</h5>
+                        <p class="preco">R$2.099,00</p>
+                        <div class="wrapper" style="width: 280px; margin: 0 auto">
+                           <div class="block1">10x sem juros de R$ 209,90</div>
+                           <div class="block2">Ou R$ 1.952,07 no boleto</div>
+                        </div>
+                     </div>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+         <div class="card mt-3">
+            <img class="card-img-top" src="assets/images/bicicleta2.jpg" alt="bicicleta2">
+            <div class="card-body">
+               <div class="card-title text-center">
+                  <h5>Bicicleta HUPI Naja Single Speed Mecânica Vermelha</h5>
+                  <p class="preco">R$1.999,00</p>
+                  <div class="wrapper" style="width: 280px; margin: 0 auto">
+                     <div class="block1">10x sem juros de R$ 199,90</div>
+                     <div class="block2">Ou R$ 1859,07 no boleto</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+         <div class="card mt-3">
+            <img class="card-img-top" src="assets/images/bicicleta3.jpg" alt="bicicleta3">
+            <div class="card-body">
+               <div class="card-title text-center">
+                  <h5>Bicicleta HUPI Naja Single Speed Mecânica Verde</h5>
+                  <p class="preco">R$1.999,00</p>
+                  <div class="wrapper" style="width: 280px; margin: 0 auto">
+                     <div class="block1">10x sem juros de R$ 199,90</div>
+                     <div class="block2">Ou R$ 1.859,07 no boleto</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+         <div class="card mt-3">
+            <img class="card-img-top" src="assets/images/bicicleta3.jpg" alt="bicicleta3">
+            <div class="card-body">
+               <div class="card-title text-center">
+                  <h5>Bicicleta HUPI Naja Single Speed Mecânica Verde</h5>
+                  <p class="preco">R$1.999,00</p>
+                  <div class="wrapper" style="width: 280px; margin: 0 auto">
+                     <div class="block1">10x sem juros de R$ 199,90</div>
+                     <div class="block2">Ou R$ 1.859,07 no boleto</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+         <div class="card mt-3">
+            <img class="card-img-top" src="assets/images/bicicleta1.jpg" alt="bicicleta1">
+            <div class="card-body">
+               <div class="card-title text-center">
+                  <h5>Bicicleta HUPI Naja Single Speed Mecânica</h5>
+                  <p class="preco">R$2.099,00</p>
+                  <div class="wrapper" style="width: 280px; margin: 0 auto">
+                     <div class="block1">10x sem juros de R$ 209,90</div>
+                     <div class="block2">Ou R$ 1.952,07 no boleto</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+         <div class="card mt-3">
+            <img class="card-img-top" src="assets/images/bicicleta2.jpg" alt="bicicleta2">
+            <div class="card-body">
+               <div class="card-title text-center">
+                  <h5>Bicicleta HUPI Naja Single Speed Mecânica Vermelha</h5>
+                  <p class="preco">R$1.999,00</p>
+                  <div class="wrapper" style="width: 280px; margin: 0 auto">
+                     <div class="block1">10x sem juros de R$ 199,90</div>
+                     <div class="block2">Ou R$ 1859,07 no boleto</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+
+   <div class="footer">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-lg-4 col-sm-5">
+               <h5>Pikex Bicicletas Ltda</h5>
+               <ul class="list-unstyled">
+                  <p>CNPJ: 99.999.999/0000-00</p>
+               </ul>
+            </div>
+
+            <div class="col-lg-4 col-sm-5">
+               <h5>Formas de Pagamento</h5>
+               <img src="assets/images/pagamento.png" alt="formasPagamento">
+            </div>
+
+            <div class="col-lg-4 col-sm-5">
+               <h5>Contato</h5>
+               <ul class="list-unstyled">
+                  <li><i class="fas fa-user"></i> Vitor</li>
+                  <li><i class="fas fa-phone"></i> (99)99999-9999</li>
+                  <li><i class="fas fa-envelope-square"></i> <a href='mailto:pikex@gmail.com'>pikex@gmail.com</a>
+                  </li>
+               </ul>
+            </div>
+
+         </div>
+      </div>
+   </div>
+
+   <script src="assets/js/jquery-3.3.1.js"></script>
+   <script src="assets/js/popper.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/script.js"></script>
 </body>
+
 </html>

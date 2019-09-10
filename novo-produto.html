@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <title>PikeX</title>
+</head>
+
+<body data-spy="scroll" data-target="#barra-navegacao" fixed-top>
+    <nav id="barra-navegacao" class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="logo" style="width: 90px">
+            </a>
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav mr-auto">
+                    <div class="dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fas fa-bicycle"></i>
+                            Bicicletas
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Completas</a>
+                            <a class="dropdown-item" href="#">Quadros</a>
+                            <a class="dropdown-item" href="#">Freios</a>
+                            <a class="dropdown-item" href="#">Pedais</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fas fa-tshirt"></i>
+                            Vestuário
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Bermudas</a>
+                            <a class="dropdown-item" href="#">Bonés</a>
+                            <a class="dropdown-item" href="#">Camisas</a>
+                            <a class="dropdown-item" href="#">Meias</a>
+                        </div>
+                    </div>
+                    <a class="nav-link nav-item" href="#">
+                        Outros
+                    </a>
+                </div>
+
+                <div class="navbar-nav">
+                    <a class="nav-link nav-item" href="carrinho.html">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a class="nav-link nav-item" href="novo-produto.html">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Entrar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container mb-4">
+        <div class="d-block d-md-none jumbotron text-center mb-4" style="margin-top: 90px;">
+            <span style="font-size: 16px;"></span>
+        </div>
+        <input style="margin-top: 120px; width: 80%; margin-bottom: 10px" placeholder=" Nome do Produto">
+
+        <div class="wrapper row">
+            <div class="product-img">
+                <img class="card-img-top" style="margin-left: 17px" src="assets/images/noimg.png" alt="placeholder">
+            </div>
+            <div class="product-info">
+                <p><input type="number" placeholder=" Preço"></p>
+                <p><input type="number" placeholder=" Max Parcelas"> <input type="number" placeholder=" Valor Parcela">
+                </p>
+                <p><input type="number" placeholder=" Valor Boleto"></p>
+            </div>
+        </div>
+
+        <div class="jumbotron mb-4" style="margin-top: 10px">
+
+            <h4 class="mb-3" style="color: orange; margin-top: -40px">Descrição do Produto</h4>
+
+            <div class="row">
+                <textarea class="form-control" id="desc-produto" rows="6"></textarea>
+            </div>
+
+            <img src="assets/images/noimg.png" style="width: 100%">
+
+
+            <h4 class="mb-3" style="color: orange; margin-top: 20px">Detalhes Técnicos</h4>
+
+            <div class="row">
+                <textarea class="form-control" id="desc-produto" rows="6"></textarea>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-sm-5">
+                    <h5>Pikex Bicicletas Ltda</h5>
+                    <ul class="list-unstyled">
+                        <p>CNPJ: 99.999.999/0000-00</p>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-sm-5">
+                    <h5>Formas de Pagamento</h5>
+                    <img src="assets/images/pagamento.png" alt="formasPagamento">
+                </div>
+
+                <div class="col-lg-4 col-sm-5">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-user"></i> Vitor</li>
+                        <li><i class="fas fa-phone"></i> (99)99999-9999</li>
+                        <li><i class="fas fa-envelope-square"></i> <a href='mailto:pikex@gmail.com'>pikex@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/all.css" rel="stylesheet">
+    <link href="assets/css/carrinho.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <title>PikeX</title>
+</head>
+
+<body data-spy="scroll" data-target="#barra-navegacao" fixed-top>
+
+    <nav id="barra-navegacao" class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/logo.png" alt="logo" style="width: 90px">
+            </a>
+            <div class="collapse navbar-collapse" id="menu">
+                <div class="navbar-nav mr-auto">
+                    <div class="dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fas fa-bicycle"></i>
+                            Bicicletas
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Completas</a>
+                            <a class="dropdown-item" href="#">Quadros</a>
+                            <a class="dropdown-item" href="#">Freios</a>
+                            <a class="dropdown-item" href="#">Pedais</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="nav-link nav-item dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fas fa-tshirt"></i>
+                            Vestuário
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Bermudas</a>
+                            <a class="dropdown-item" href="#">Bonés</a>
+                            <a class="dropdown-item" href="#">Camisas</a>
+                            <a class="dropdown-item" href="#">Meias</a>
+                        </div>
+                    </div>
+                    <a class="nav-link nav-item" href="#">
+                        Outros
+                    </a>
+                </div>
+
+                <div class="navbar-nav">
+                    <a class="nav-link nav-item" href="#pedidos">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a class="nav-link nav-item" href="novo-produto.html">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Entrar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container mb-4" style="margin-bottom: 500px">
+        <main id="main">
+            <h2 style="margin-top: 120px;  font: 40px;"><strong>CARRINHO DE COMPRAS</strong></h2>
+            <div class="basket">
+                <div class="basket-labels">
+                    <ul>
+                        <li class="item item-heading">Item</li>
+                        <li class="price">Preço</li>
+                        <li class="quantity">Quantidade</li>
+                    </ul>
+                </div>
+                <div class="basket-product">
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="assets/images/bicicleta1.jpg" class="product-frame">
+                        </div>
+                        <div class="product-details">
+                            <h1>Bicicleta HUPI Naja Single Speed Mecânica RAW
+                            </h1>
+                            <p><strong>Código do produto - 232321939</strong></p>
+                        </div>
+                    </div>
+                    <div class="price">R$2.099,00</div>
+                    <div class="quantity">
+                        <input type="number" value="1" min="1" class="quantity-field">
+                    </div>
+                </div>
+
+                <div class="basket-product">
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="assets/images/bicicleta2.jpg" class="product-frame">
+                        </div>
+                        <div class="product-details">
+                            <h1>Bicicleta HUPI Naja Single Speed Mecânica Vermelha
+                            </h1>
+                            <p><strong>Código do produto - 231893517</strong></p>
+                        </div>
+                    </div>
+                    <div class="price">R$1.999,00</div>
+                    <div class="quantity">
+                        <input type="number" value="1" min="1" class="quantity-field">
+                    </div>
+                </div>
+
+                <div class="basket-product">
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="assets/images/bicicleta2.jpg" class="product-frame">
+                        </div>
+                        <div class="product-details">
+                            <h1>Bicicleta HUPI Naja Single Speed Mecânica Vermelha
+                            </h1>
+                            <p><strong>Código do produto - 231893517</strong></p>
+                        </div>
+                    </div>
+                    <div class="price">R$1.999,00</div>
+                    <div class="quantity">
+                        <input type="number" value="1" min="1" class="quantity-field">
+                    </div>
+                </div>
+
+                <div class="basket-product">
+                    <div class="item">
+                        <div class="product-image">
+                            <img src="assets/images/bicicleta2.jpg" class="product-frame">
+                        </div>
+                        <div class="product-details">
+                            <h1>Bicicleta HUPI Naja Single Speed Mecânica Vermelha
+                            </h1>
+                            <p><strong>Código do produto - 231893517</strong></p>
+                        </div>
+                    </div>
+                    <div class="price">R$1.999,00</div>
+                    <div class="quantity">
+                        <input type="number" value="1" min="1" class="quantity-field">
+                    </div>
+                </div>
+                
+            <button id="btn-finalizar">FINALIZAR COMPRA</button>
+            </div>
+        </main>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-5">
+                    <h5>Pikex Bicicletas Ltda</h5>
+                    <ul class="list-unstyled">
+                        <p>CNPJ: 99.999.999/0000-00</p>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-sm-5">
+                    <h5>Formas de Pagamento</h5>
+                    <img src="assets/images/pagamento.png" alt="formasPagamento">
+                </div>
+
+                <div class="col-lg-4 col-sm-5">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-user"></i> Vitor</li>
+                        <li><i class="fas fa-phone"></i> (99)99999-9999</li>
+                        <li><i class="fas fa-envelope-square"></i> <a href='mailto:pikex@gmail.com'>pikex@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
